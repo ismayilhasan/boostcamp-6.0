@@ -1,46 +1,57 @@
 *{
-    margin:0;
+    margin: 0;
+    padding: 0;
 }
 
-.div1 , .div3 , .div4{
-    width: 100%;
-    height: 100vh;
-}
-
-.div1{
-    background-color:red ;
-   position: relative;
-   
+.container{
+    margin: 0 20px;
   
 }
-.div1 div h1{
-    text-align: center;
-    transform:rotateX(88deg) ;
 
+#Header{
+
+    padding: 20px 0;
+    background-color: green;
+}
+
+ul{
+    list-style: none;
+    border: 1px solid gray;
+}
+
+a:nth-child(1){
+    font-size: 20px;
+    text-decoration: dotted;
+}
+
+a:nth-child(2){
+    font-size: 20px;
+}
+a:nth-child(3){
+    font-size: 20px;
 }
 
 
-.div1 div h1:hover{
-    transition: all .5s;
-    transform: scaleZ(1.5);
+a{
+    color: black;
 }
 
 
-
-.div2{
-    background-color:blue ;
-    
+.header-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.div3:hover{
-    background-color: black;
+.navigation-list{
+    display: flex;
 }
 
-.div3{
-    background-color:purple ;
+a::before{
+   content: "";
+   position: absolute;
+   top: 10px;
+   width: 100%;
+   height: 1px;
+   background-color: brown;
 }
-
-.div4{
-    background-color:yellow ;
-}
-
