@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
+
+    <h1 style="text-decoration: underline;">Salam</h1>
 
     <header id="Header">
         <div class="container">
@@ -39,7 +42,7 @@
     <input type="checkbox"></input>
     <div>
         <input type="radio" name="alma" value="alma">alma</input>
-        <input type="radio" name="alma" value="armud">armud</input>
+        <input type="radio" name="afghlma" value="armud">armud</input>
     </div>
 
 
@@ -49,6 +52,24 @@
         <input type="submit" value="alma">
     </form>
 
+    <form action="" class="form-area">
+        <div class="form-area-heading">
+            <h2>Login</h2>
+        </div>
+        <div class="username-area">
+            <label id="usernameLabel" class="label-username" for="">username</label>
+            <input onblur="ResetLabel()" onfocus="HoverLabel()" id="inputUsername" class="input-username" type="text">
+        </div>
+        <div class="password-area">
+            <label class="label-password" for="">password</label>
+            <input id="passwordInput" class="input-password" type="password">
+            <i onmouseup="HidePassword()" onmousedown="ShowPassword()" class="fa-solid fa-eye eye-icon"></i>
+        </div>
+        
+    </form>
+<ul class="list" id="list">
+    <li></li>
+</ul>
     <script src="./index.js"></script>
 </body>
 

@@ -9,7 +9,7 @@
 }
 
 #Header{
-
+    position: relative;
     padding: 20px 0;
     background-color: green;
 }
@@ -23,6 +23,21 @@ ul{
 a{
     color: black;
     text-decoration: none;
+}
+
+a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 45px;
+    background-color: black;
+    transition: .5s;
+}
+
+
+li:hover a::before{
+    width: 4%;
 }
 
 li{
@@ -52,3 +67,58 @@ a:nth-child(3){
     font-size: 20px;
 }
 
+
+.form-area{
+    width: 50%;
+    background-color: yellow;
+    margin: 0 auto;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.form-area-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.username-area{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.password-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.label-username{
+    position: absolute;
+    top: 72px;
+    left: 187px;
+    transition: .3s;
+}
+.label-password{
+    position: absolute;
+    top: 119px;
+    left: 188px;
+}
+
+.input-username{
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    
+}
+
+.input-password{
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 20px;
+}
+
+.eye-icon{
+    position: absolute;
+    bottom: 26px;
+    right: 181px
+}
